@@ -1,0 +1,22 @@
+.container-fluid {
+    /* margin-left:80;
+    margin-right:80; 
+    min-width: 1500;
+    max-width: 1720; */
+    padding:40px;
+    width: 100%;
+    background-color:cornflowerblue;
+}
+
+.jumbotron {
+    background-color:rgb(46, 43, 43);
+}
+
+h1 {
+    color:white;
+    font-size: 3rem
+}
+h3 {
+    color: rgb(110, 107, 107);
+    text-align: center;
+}
