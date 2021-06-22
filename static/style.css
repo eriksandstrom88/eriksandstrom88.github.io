@@ -20,3 +20,27 @@ h3 {
     color: rgb(160, 156, 156);
     text-align: center;
 }
+
+#hard-skills {
+    background-color:lightgray;
+}
+
+#soft-skills {
+    background-color:rgb(83, 82, 82);
+}
+
+#soft-skills-ul {
+    color:white
+}
+
+#soft-skills-header {
+    color:white
+}
+
+#projects-header {
+    text-align: center;
+}
+
+#inflation-row {
+    background-color:gray
+}
