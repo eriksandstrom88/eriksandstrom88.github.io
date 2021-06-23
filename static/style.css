@@ -44,3 +44,116 @@ h3 {
 #inflation-row {
     background-color:gray
 }
+
+#mpc-project-row {
+    background-color:lightgray
+}
+
+#inflation-github {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#inflation-link {
+    color:white;
+}
+
+#mpc-github {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#mpc-link {
+    color:black;
+}
+
+h2 {
+    text-decoration:underline
+}
+
+#work-header {
+    text-align: center;
+}
+
+#mpc-experience {
+    background-color:rgb(83, 82, 82);
+    color:white
+}
+
+#mea-experience {
+    background-color:gray;
+}
+
+#contractor-experience {
+    background-color:lightgray;
+}
+
+#aedc-experience {
+    background-color:rgb(83, 82, 82);
+    color:white
+}
+
+#mea-title {
+    color:rgb(83, 82, 82);
+    text-align:left
+}
+
+#contractor-title {
+    color:rgb(83, 82, 82);
+    text-align:left
+}
+
+#mpc-title {
+    text-align:left;
+}
+
+#aedc-title {
+    text-align:left;
+}
+
+#gmu-edu {
+    background-color:gray
+}
+
+#du-edu {
+    background-color:lightgray
+}
+
+#csu-edu {
+    background-color:rgb(83, 82, 82);
+    color:white
+}
+
+#tcu-edu {
+    background-color:gray
+}
+
+#gmu-degree {
+    color:rgb(83, 82, 82);
+    text-align:left
+}
+
+#du-degree {
+    color:rgb(83, 82, 82);
+    text-align:left
+}
+
+#csu-degree {
+    text-align:left
+}
+
+#tcu-degree {
+    color:rgb(83, 82, 82);
+    text-align:left
+}
+
+#personal {
+    background-color:rgb(83, 82, 82);
+    color:white
+}
+/* #mpc-skills {
+    text-decoration:bold;
+} */
+/* Underline section headers
+Spacing/buffer/margin
+Inflation project font color to white */
