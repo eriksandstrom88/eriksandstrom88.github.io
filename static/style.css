@@ -151,6 +151,11 @@ h2 {
     background-color:rgb(83, 82, 82);
     color:white
 }
+
+#about-me {
+    background-color:gray
+}
+
 /* #mpc-skills {
     text-decoration:bold;
 } */
