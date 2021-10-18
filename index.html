@@ -225,6 +225,8 @@
                                     <div class="col-md-6">
                                         <div>
                                             <p>Finally, I have included three models for predicting the level of inflation as measured by the Consumer Price Index (CPI), Personal Consumption Expenditures (PCE), and the GDP Deflator based on user inputs.  It is worth noting that these models are currently DEEPLY FLAWED.  They are full of omitted variable bias, biases due to correlated input variables, and none of the data was properly scaled prior to building the models.  I have chosen to leave them in the application despite these flaws because I like the user interface, and I will be replacing them with much better models in the near future.  I have already created some of the models in a separate-but-related project (see below).</p>
+
+                                            <p>ARCHITECTURE: I am the sole author of this application.  I don't pretend to be an expert web designer, but I can do enough in HTML (Bootstrap) and CSS to get by.  The application is primarily built using a python Flask file in conjunction with a JavaScript (D3.js) file, an HTML file, and a CSS file.  The data is stored in a PostgreSQL database.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +256,17 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div>
-                                            <p>I am extremely excited about this project!  Initially intended to be included in my Macroeconomic Research Tool project (above), I decide to separate this to make it its own project because I want to keep working on the various models for the foreseeable future.</p>
+                                            <p>I am extremely excited about this project!  Initially intended to be included in my Macroeconomic Research Tool project (above), I decide to separate this to make it its own project because I want to keep working on the various models for the foreseeable future.  This entire project is done in Jupyter Notebook, though I plan to integrate my favorite models into the Macroeconomic Research Tool.</p>
+
+                                            <p>The first model was intended to give me a baseline for what the most basic neural network would look like with minimal data preprocessing.  It was built using a Scikit-Learn MLP neural network.  It has a single hidden layer with 100 nodes, and the training data is unscaled.  I used data from the end of Bretton Woods in 1971 through the beginning of the COVID-19 pandemic in 2021.  The model did a poor job predicting the value for CPI based on post-pandemic inputs.</p>
+
+                                            <p>Model 2 switches from Scikit-Learn to Keras and Tensorflow.  Similarly, it is a very basic neural network with a single hidden layer and 100 nodes, and it too uses unscaled data.  It does a slightly better job of predicting CPI, though it too is intended to be just a baseline.</p>
+
+                                            <p>Model 3 also uses Keras, but this version uses data scaled using Scikit-Learn's MinMaxScaler function to scale all values to betweeen 0 and 1.  The model has a single hidden layer with 100 nodes, and it propagates through 100 epochs.  The improvement over the previous models is substantial, through the model is still not particularly accurate.</p>
+
+                                            <p>Model 4 is the best model yet!  I increased the input variables from 8 to 12, there are two hidden layers instead of one (still with 100 nodes each), and I again propagated through 100 epochs.  Like the previous model, I again used Scikit-Learn's MinMaxScaler function to scale all variables between 0 and 1.  This model (an all above models) are trained on data starting 10/1/1971 at the end of Bretton Woods, and ending on 1/1/2020 before the COVID-19 pandemic.  Incredibly, the model predicted CPI for April of 2021 with perfect precision despite many of the input variables breaking from their long term trends once the pandemic began.</p>
+
+                                            <p>Model 5 is a work in progress.  I intend for it to be a custom model loosely based on the Quantity Theory of Money.  I will model each of the four variables in the QTM separately, then create an ensemble model to predict the price level.  I believe the QTM is generally accurate in the long run, but there are short-term pressures that influence each of the variables in MV = PY.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
