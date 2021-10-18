@@ -198,14 +198,14 @@
                                         <div>
                                             <p>Though I love virtually all topics in economics, recent events have led me to take a particularly strong interest in US Dollar inflation.  Starting as a Project for my data analytics bootcamp and continuing as an independent project long after, I wanted to create a research dashboard for economists like me to examine macroeconomic trends and directly examine relationships between economic indicators.</p>
 
-                                            <p>The user of the applciation can choose up to 5 data series to visualize on the line chart.  Additionally, the user may choose a background for the line chart that displays recessions, presidential administrations, or major world events.  The summary statistics tables to the right of the line chart give the user a handy way to compare the long-term changes and trends in the different series, and they re-calculate when the user zooms in in a particular date range or changes which series are displayed on the line chart.</p>
+                                            <p>The user of the applciation can choose up to 5 data series to visualize on the line chart.  Additionally, the user may choose a background for the line chart that displays recessions, presidential administrations, or major world events.  The summary statistics tables to the right of the line chart give the user a handy way to compare the long-term changes and trends in the different series, and they re-calculate when the user zooms in in a particular date range or changes which series are displayed on the line chart.  There are a total of 123 different series to choose from, and the data is mostly sourced from the St. Louis Federal Reserve's FRED database.  A few of the series are sourced from the Wall Street Journal.</p>
                                         </div>
                                     </div>
                                 </div>
                             </br>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p>More words and stuff about inflation and stuff</p>
+                                        <p>If the user wants to take a closer look at the relationship between two series, I have included a scatter plot and a gauge to display the correlation between the two variables.  In addition to the 123 main series, the user may choose to examine the correlation between the "change" or the "percent change" between the variables.  Further, since some economic trends don't influence other indicators for several days, weeks or months after changing, the user may choose to lag the variable by up to 10 of the variable's reporting intervals (days, weeks, months, quarters, years), as well as filter to a precise date range.</p>
                                     </div>
                                     <div class="col-md-6">
                                         <div>
@@ -222,7 +222,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div>
-                                            <p>Let's talk about some inflation models, mmmmmmK???</p>
+                                            <p>Finally, I have included three models for predicting the level of inflation as measured by the Consumer Price Index (CPI), Personal Consumption Expenditures (PCE), and the GDP Deflator based on user inputs.  It is worth noting that these models are currently DEEPLY FLAWED.  They are full of omitted variable bias, biases due to correlated input variables, and none of the data was properly scaled prior to building the models.  I have chosen to leave them in the application despite these flaws because I like the user interface, and I will be replacing them with much better models in the near future.</p>
                                         </div>
                                     </div>
                                 </div>
