@@ -45,6 +45,10 @@ h3 {
     background-color:gray
 }
 
+#inflation-model-row {
+    background-color:rgb(83, 82, 82)
+}
+
 #mpc-project-row {
     background-color:lightgray
 }
