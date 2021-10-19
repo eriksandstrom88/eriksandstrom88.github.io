@@ -33,7 +33,7 @@ h3 {
     color:white
 }
 
-#soft-skills-header {
+.white-h2-header {
     color:white
 }
 
@@ -46,6 +46,7 @@ h3 {
 }
 
 #inflation-model-row {
+    color:white;
     background-color:rgb(83, 82, 82)
 }
 
