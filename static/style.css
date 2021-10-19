@@ -170,6 +170,11 @@ h2 {
     text-align:center
 }
 
+.skills-category {
+    color:rgb(83, 82, 82);
+    text-align:left
+}
+
 /* #mpc-skills {
     text-decoration:bold;
 } */
